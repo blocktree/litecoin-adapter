@@ -17,6 +17,7 @@ package litecoin
 
 import (
 	"github.com/blocktree/bitcoin-adapter/bitcoin"
+	"github.com/blocktree/go-owcdrivers/btcTransaction"
 	"github.com/blocktree/openwallet/log"
 )
 
@@ -33,6 +34,8 @@ func NewWalletManager() *WalletManager {
 	wm := WalletManager{}
 	wm.WalletManager = bitcoin.NewWalletManager()
 	wm.Config = bitcoin.NewConfig(Symbol, MasterKey)
+	wm.Config.MainNetAddressPrefix = btcTransaction.LTCMainnetAddressPrefix
+	wm.Config.TestNetAddressPrefix = btcTransaction.LTCTestnetAddressPrefix
 	wm.Decoder = NewAddressDecoder(&wm)
 	wm.Log = log.NewOWLogger(wm.Symbol())
 	return &wm
