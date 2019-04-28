@@ -19,6 +19,7 @@ github.com/blocktree/bitcoin-adapter v1.1.0 h1:ixEGdMJiV/YoLSQ7rFEA8lmgEfiX4yn3+
 github.com/blocktree/bitcoin-adapter v1.1.0/go.mod h1:PwAIkLmydwl8z5YV/E+E9/x6zm09w8z81xo76SCbIXM=
 github.com/blocktree/bitcoin-adapter v1.1.1 h1:4LLmbZyDHikQLdBUF3f4BcBwWIfWCpopld+xYTWgJS0=
 github.com/blocktree/bitcoin-adapter v1.1.1/go.mod h1:FppHhnNSH6U/2l6/RoEwNIxX5tXXb1hz6SarMkEduKU=
+github.com/blocktree/bitcoin-adapter v1.1.2/go.mod h1:FppHhnNSH6U/2l6/RoEwNIxX5tXXb1hz6SarMkEduKU=
 github.com/blocktree/go-owcdrivers v1.0.0 h1:dMxbi+In7On3fq/2cfaO+IdKY35l++4cPFe6jcdJanM=
 github.com/blocktree/go-owcdrivers v1.0.0/go.mod h1:AzbIxzzRcSszV/XwOiu83QqKuGTuWyCdCrVfGNt2bk8=
 github.com/blocktree/go-owcdrivers v1.0.4/go.mod h1:HS5S8MYW1hdN6hEmwgqu/kWyFPkxvjGN9Le0zAGmFZM=
