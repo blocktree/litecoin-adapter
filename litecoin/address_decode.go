@@ -16,6 +16,7 @@
 package litecoin
 
 import (
+	"fmt"
 	"github.com/blocktree/bitcoin-adapter/bitcoin"
 	"github.com/blocktree/go-owcdrivers/addressEncoder"
 	"github.com/blocktree/go-owcrypt"
@@ -130,5 +131,37 @@ func (decoder *addressDecoder) WIFToPrivateKey(wif string, isTestnet bool) ([]by
 	}
 
 	return priv, err
+
+}
+
+
+//ScriptPubKeyToBech32Address scriptPubKey转Bech32地址
+func (decoder *addressDecoder) ScriptPubKeyToBech32Address(scriptPubKey []byte) (string, error) {
+	return scriptPubKeyToBech32Address(scriptPubKey, decoder.wm.Config.IsTestNet)
+
+}
+
+//ScriptPubKeyToBech32Address scriptPubKey转Bech32地址
+func scriptPubKeyToBech32Address(scriptPubKey []byte, isTestNet bool) (string, error) {
+	var (
+		hash []byte
+	)
+
+	cfg := addressEncoder.LTC_mainnetAddressBech32V0
+	if isTestNet {
+		cfg = addressEncoder.LTC_testnetAddressBech32V0
+	}
+
+	if len(scriptPubKey) == 22 || len(scriptPubKey) == 34 {
+
+		hash = scriptPubKey[2:]
+
+		address := addressEncoder.AddressEncode(hash, cfg)
+
+		return address, nil
+
+	} else {
+		return "", fmt.Errorf("scriptPubKey length is invalid")
+	}
 
 }
