@@ -15,8 +15,11 @@
 
 package litecoin
 
+import "github.com/blocktree/go-owcrypt"
+
 const (
 	//币种
 	Symbol    = "LTC"
-	MasterKey = "litecoin seed"
+	CurveType = owcrypt.ECC_CURVE_SECP256K1
+	Decimals  = int32(8)
 )
