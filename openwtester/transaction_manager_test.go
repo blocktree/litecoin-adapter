@@ -105,8 +105,8 @@ func TestWalletManager_GetTransactionByWxID(t *testing.T) {
 
 func TestWalletManager_GetAssetsAccountBalance(t *testing.T) {
 	tm := testInitWalletManager()
-	walletID := "WGVsUfTTVaCwAMRTqeJiDQsZ3vrWp9DzMA"
-	accountID := "CbnmpvJNsUjtEMRoy5Nf5FGTyfjLbke8FuKjKtEUc7fs"
+	walletID := "VyeUFV8YYPcZdXD8DkJc96K3TK5cLaHjqj"
+	accountID := "CYc866Ss2WhkYCB6Axsxy6oWnftjybJhcxS1UAsJ29cT"
 
 	balance, err := tm.GetAssetsAccountBalance(testApp, walletID, accountID)
 	if err != nil {

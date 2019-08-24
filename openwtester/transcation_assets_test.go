@@ -119,16 +119,16 @@ func testSubmitTransactionStep(tm *openw.WalletManager, rawTx *openwallet.RawTra
 
 func TestTransfer(t *testing.T) {
 	tm := testInitWalletManager()
-	walletID := "WGVsUfTTVaCwAMRTqeJiDQsZ3vrWp9DzMA"
-	accountID := "25rXFzGxcw3pRvgHWSY5Eq3QQKXDzVcGR44eArC2VcGJ"
-	to := "mpU7ufTsvTQxTMUGdyLT31o5MjDbQhiuSb"
+	walletID := "VyeUFV8YYPcZdXD8DkJc96K3TK5cLaHjqj"
+	accountID := "CYc866Ss2WhkYCB6Axsxy6oWnftjybJhcxS1UAsJ29cT"
+	to := "MGjXD6TT621ngpAsYGFom78WerEAZunARm"
 
 	//accountID := "F7aeTnSdjEA16x4H3n1vPtDEo9Xp5Vus11pwY5QF6K3y"
 	//to := "n4GFnRSN599W9T9tzzKWyCjkKWkn77CNa2"
 
 	testGetAssetsAccountBalance(tm, walletID, accountID)
 
-	rawTx, err := testCreateTransactionStep(tm, walletID, accountID, to, "0.001", "0.02", nil)
+	rawTx, err := testCreateTransactionStep(tm, walletID, accountID, to, "0.001", "", nil)
 	if err != nil {
 		return
 	}
