@@ -55,6 +55,8 @@ github.com/blocktree/bitcoin-adapter v1.3.1 h1:ISPZWOYk318PsW9sGcvrYQA7s9Y/KDPEu
 github.com/blocktree/bitcoin-adapter v1.3.1/go.mod h1:z09+R5GlvHRMhO/xnQikLGOU+0KsRyBKlFHZfBAEQNQ=
 github.com/blocktree/bitcoin-adapter v1.4.0 h1:jCDHIyPNBtOE99XXA+ZhHnlu1r4oNFPZthcGaJpAumo=
 github.com/blocktree/bitcoin-adapter v1.4.0/go.mod h1:h/O4o/1V/Zsht0yjmfXm6gW1roJpW1BBoJ5nPUlbJAk=
+github.com/blocktree/bitcoin-adapter v1.4.1 h1:5Tq3b8MLe0NQRX9EWcomeKG0e3EGHCJnXztS23f0hMs=
+github.com/blocktree/bitcoin-adapter v1.4.1/go.mod h1:h/O4o/1V/Zsht0yjmfXm6gW1roJpW1BBoJ5nPUlbJAk=
 github.com/blocktree/bitshares-adapter v1.0.5/go.mod h1:tyzkgBUWF65zFQoQSj3l1IRhI/3pkSWFwnG9bnM3XZE=
 github.com/blocktree/ddmchain-adapter v1.0.5/go.mod h1:oqsMVtGaRVm0JIEld4Ge9vblhwjSuv4k73artQE+EO8=
 github.com/blocktree/eosio-adapter v1.0.0/go.mod h1:Ck5C4aIg+z9DbqjAngn6sVemI5GQF/6BPoxzvdE7pa8=

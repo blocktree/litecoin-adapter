@@ -4,7 +4,7 @@ go 1.12
 
 require (
 	github.com/astaxie/beego v1.11.1
-	github.com/blocktree/bitcoin-adapter v1.4.0
+	github.com/blocktree/bitcoin-adapter v1.4.1
 	github.com/blocktree/go-owcdrivers v1.1.16
 	github.com/blocktree/go-owcrypt v1.0.3
 	github.com/blocktree/openwallet v1.5.5
