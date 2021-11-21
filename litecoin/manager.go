@@ -18,7 +18,7 @@ package litecoin
 import (
 	"github.com/blocktree/bitcoin-adapter/bitcoin"
 	"github.com/blocktree/go-owcdrivers/btcTransaction"
-	"github.com/blocktree/openwallet/log"
+	"github.com/blocktree/openwallet/v2/log"
 )
 
 const (
@@ -28,7 +28,6 @@ const (
 type WalletManager struct {
 	*bitcoin.WalletManager
 }
-
 
 func NewWalletManager() *WalletManager {
 	wm := WalletManager{}

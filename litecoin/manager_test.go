@@ -18,7 +18,7 @@ package litecoin
 import (
 	"fmt"
 	"github.com/blocktree/bitcoin-adapter/bitcoin"
-	"github.com/blocktree/openwallet/log"
+	"github.com/blocktree/openwallet/v2/log"
 	"math"
 	"path/filepath"
 	"testing"
