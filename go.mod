@@ -3,7 +3,7 @@ module github.com/blocktree/litecoin-adapter
 go 1.12
 
 require (
-	github.com/astaxie/beego v1.12.0
+	github.com/astaxie/beego v1.12.2
 	github.com/blocktree/bitcoin-adapter v1.5.6
 	github.com/blocktree/go-owcdrivers v1.2.0
 	github.com/blocktree/go-owcrypt v1.1.1
